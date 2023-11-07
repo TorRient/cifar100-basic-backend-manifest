@@ -19,4 +19,4 @@ spec:
         image: torrient/demo-kubernetes-backend:v1
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: 8000
