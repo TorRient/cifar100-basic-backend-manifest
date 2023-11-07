@@ -9,7 +9,6 @@ spec:
   - port: 8000
     protocol: TCP
     targetPort: 8000
-    nodePort: 31198
   selector:
     app: demo-kubernetes-backend
-  type: NodePort
+  type: ClusterIP
