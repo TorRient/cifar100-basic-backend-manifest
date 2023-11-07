@@ -2,6 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: demo-kubernetes-backend-service
-  namespace: demo-kubernetes-prod
   labels:
     app: demo-kubernetes-backend
+spec:
+  ports:
+  - port: 8000
+    protocol: TCP
+    targetPort: 8000
+  selector:
+    app: demo-kubernetes-backend
+  type: ClusterIP
