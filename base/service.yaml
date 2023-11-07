@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-kubernetes-backend-service
+  labels:
+    app: demo-kubernetes-backend
+spec:
+  ports:
+  - port: 8000
+    protocol: TCP
+    targetPort: 8000
+    nodePort: 31198
+  selector:
+    app: demo-kubernetes-backend
+  type: NodePort

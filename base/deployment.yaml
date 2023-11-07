@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-kubernetes-backend
+  labels:
+    app: demo-kubernetes-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-kubernetes-backend
+  template:
+    metadata:
+      labels:
+        app: demo-kubernetes-backend
+    spec:
+      containers:
+      - name: demo-kubernetes-backend
+        image: torrient/demo-kubernetes-backend:v5
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
