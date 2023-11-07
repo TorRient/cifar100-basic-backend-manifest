@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo-kubernetes-backend
-        image: torrient/demo-kubernetes-backend:v${params.IMAGE_TAG}
+        image: torrient/demo-kubernetes-backend:v$BUILD_NUMBER
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
