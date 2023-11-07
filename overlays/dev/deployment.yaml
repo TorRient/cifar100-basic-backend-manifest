@@ -2,10 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demo-kubernetes-backend
+  namespace: demo-kubernetes-dev
   labels:
     app: demo-kubernetes-backend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: demo-kubernetes-backend
