@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: demo-kubernetes-backend
-        image: torrient/demo-kubernetes-backend:v2
+        image: torrient/demo-kubernetes-backend:v4
