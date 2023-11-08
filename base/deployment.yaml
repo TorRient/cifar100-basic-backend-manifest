@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: demo-kubernetes-backend
   labels:
-    app: demo-kubernetes-backend
+    version: v1
 spec:
   replicas: 1
   selector:
@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         app: demo-kubernetes-backend
+        version: v1
     spec:
       containers:
       - name: demo-kubernetes-backend

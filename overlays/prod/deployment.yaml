@@ -4,7 +4,7 @@ metadata:
   name: demo-kubernetes-backend
   namespace: demo-kubernetes-prod
   labels:
-    app: demo-kubernetes-backend
+    version: v1
 spec:
   replicas: 5
   selector:
@@ -14,6 +14,7 @@ spec:
     metadata:
       labels:
         app: demo-kubernetes-backend
+        version: v1
     spec:
       containers:
       - name: demo-kubernetes-backend
