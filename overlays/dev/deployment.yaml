@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - name: demo-kubernetes-backend
-        image: torrient/demo-kubernetes-backend:dev_v8
+        image: torrient/demo-kubernetes-backend:dev_v9
