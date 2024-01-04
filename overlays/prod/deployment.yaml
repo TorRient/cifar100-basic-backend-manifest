@@ -6,7 +6,7 @@ metadata:
   labels:
     version: v1
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: demo-kubernetes-backend
