@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: demo-kubernetes-backend
-        image: torrient/demo-kubernetes-backend:dev_v12
+        image: torrient/demo-kubernetes-backend:dev_v13
         resources:
           requests:
             memory: "1536Mi"
