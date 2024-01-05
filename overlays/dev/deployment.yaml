@@ -21,8 +21,8 @@ spec:
         image: torrient/demo-kubernetes-backend:dev_v12
         resources:
           requests:
-            memory: "2048Mi"
+            memory: "1536Mi"
             cpu: "2000m"
           limits:
-            memory: "2048Mi"
+            memory: "1536Mi"
             cpu: "2000m"
